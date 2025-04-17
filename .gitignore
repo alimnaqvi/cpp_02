@@ -1,0 +1,13 @@
+a.out
+*.o
+*.out
+rough*
+test
+.vscode
+.clang-format
+*.replace
+
+OCF
+fixedPoint
+overload
+BSP
