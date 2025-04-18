@@ -2,6 +2,7 @@
 #define FIXED_H
 
 #include <iostream>
+#include <cmath>
 
 class Fixed {
   public:
@@ -24,6 +25,6 @@ class Fixed {
     static const int mNbFractBits;
 };
 
-std::ostream& operator<<( std::ostream& out, Fixed fixed );
+std::ostream& operator<<( std::ostream& out, const Fixed& fixed );
 
 #endif /* FIXED_H */
