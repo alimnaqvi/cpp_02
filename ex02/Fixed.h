@@ -20,22 +20,22 @@ class Fixed {
     int  getRawBits( void ) const;
     void setRawBits( int const raw );
 
-    const Fixed& operator>( const Fixed& fixed );
-    const Fixed& operator<( const Fixed& fixed );
-    const Fixed& operator>=( const Fixed& fixed );
-    const Fixed& operator<=( const Fixed& fixed );
-    const Fixed& operator==( const Fixed& fixed );
-    const Fixed& operator!=( const Fixed& fixed );
+    bool operator>( const Fixed& fixed );
+    bool operator<( const Fixed& fixed );
+    bool operator>=( const Fixed& fixed );
+    bool operator<=( const Fixed& fixed );
+    bool operator==( const Fixed& fixed );
+    bool operator!=( const Fixed& fixed );
 
-    const Fixed& operator+( const Fixed& fixed );
-    const Fixed& operator-( const Fixed& fixed );
-    const Fixed& operator*( const Fixed& fixed );
-    const Fixed& operator/( const Fixed& fixed );
+    Fixed operator+( const Fixed& fixed );
+    Fixed operator-( const Fixed& fixed );
+    Fixed operator*( const Fixed& fixed );
+    Fixed operator/( const Fixed& fixed );
 
     Fixed& operator++();
     Fixed& operator--();
-    Fixed& operator++( int );
-    Fixed& operator--( int );
+    Fixed  operator++( int );
+    Fixed  operator--( int );
 
     static Fixed&       min( Fixed& fixed1, Fixed& fixed2 );
     static const Fixed& min( const Fixed& fixed1, const Fixed& fixed2 );
