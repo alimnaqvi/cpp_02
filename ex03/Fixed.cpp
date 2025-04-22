@@ -3,31 +3,31 @@
 const int Fixed::mNbFractBits = 8;
 
 Fixed::Fixed() : mFixedPointValue{} {
-    std::cout << "Default constructor called (Fixed class)" << '\n';
+    // std::cout << "Default constructor called (Fixed class)" << '\n';
 }
 
 Fixed::Fixed( const Fixed& fixed ) : mFixedPointValue{ fixed.getRawBits() } {
-    std::cout << "Copy constructor called (Fixed class)" << '\n';
+    // std::cout << "Copy constructor called (Fixed class)" << '\n';
 }
 
 Fixed& Fixed::operator=( const Fixed& fixed ) {
-    std::cout << "Copy assignment operator called (Fixed class)" << '\n';
+    // std::cout << "Copy assignment operator called (Fixed class)" << '\n';
     if ( this != &fixed )
         mFixedPointValue = fixed.getRawBits();
     return *this;
 }
 
 Fixed::~Fixed() {
-    std::cout << "Destructor called (Fixed class)" << '\n';
+    // std::cout << "Destructor called (Fixed class)" << '\n';
 }
 
 Fixed::Fixed( const int initInt ) : mFixedPointValue{ initInt << mNbFractBits } {
-    std::cout << "Int constructor called (Fixed class)" << '\n';
+    // std::cout << "Int constructor called (Fixed class)" << '\n';
 }
 
 Fixed::Fixed( const float initFloat )
     : mFixedPointValue{ static_cast<int>( roundf( ( initFloat * ( 1 << mNbFractBits ) ) ) ) } {
-    std::cout << "Float constructor called (Fixed class)" << '\n';
+    // std::cout << "Float constructor called (Fixed class)" << '\n';
 }
 
 float Fixed::toFloat( void ) const {

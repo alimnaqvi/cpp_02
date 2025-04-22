@@ -4,6 +4,11 @@
 #include "Fixed.h"
 #include <iostream>
 
+#define BOLDMAGENTA "\033[1m\033[35m"
+#define RED         "\033[31m"
+#define GREEN       "\033[32m"
+#define RESET       "\033[0m"
+
 class Point {
   public:
     Point();
