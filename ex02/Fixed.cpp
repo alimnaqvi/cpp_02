@@ -71,21 +71,21 @@ bool Fixed::operator!=( const Fixed& fixed ) {
     return this->mFixedPointValue != fixed.mFixedPointValue;
 }
 
-Fixed Fixed::operator+( const Fixed& fixed ) {
+Fixed Fixed::operator+( const Fixed& fixed ) const {
     Fixed result;
     result.setRawBits( this->mFixedPointValue + fixed.mFixedPointValue );
 
     return result;
 }
 
-Fixed Fixed::operator-( const Fixed& fixed ) {
+Fixed Fixed::operator-( const Fixed& fixed ) const {
     Fixed result;
     result.setRawBits( this->mFixedPointValue - fixed.mFixedPointValue );
 
     return result;
 }
 
-Fixed Fixed::operator*( const Fixed& fixed ) {
+Fixed Fixed::operator*( const Fixed& fixed ) const {
     long long rawMultiple{ static_cast<long long>( this->mFixedPointValue ) *
                            fixed.mFixedPointValue };
 
@@ -95,7 +95,7 @@ Fixed Fixed::operator*( const Fixed& fixed ) {
     return result;
 }
 
-Fixed Fixed::operator/( const Fixed& fixed ) {
+Fixed Fixed::operator/( const Fixed& fixed ) const {
     long long tempScaledUp{ static_cast<long long>( this->mFixedPointValue ) *
                             ( 1 << mNbFractBits ) };
 
