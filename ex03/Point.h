@@ -5,6 +5,8 @@
 #include <iostream>
 
 #define BOLDMAGENTA "\033[1m\033[35m"
+#define BOLDBLUE    "\033[1m\033[34m"
+#define BOLDCYAN    "\033[1m\033[36m"
 #define RED         "\033[31m"
 #define GREEN       "\033[32m"
 #define RESET       "\033[0m"
