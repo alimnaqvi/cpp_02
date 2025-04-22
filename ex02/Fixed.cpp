@@ -47,27 +47,27 @@ void Fixed::setRawBits( int const raw ) {
     mFixedPointValue = raw;
 }
 
-bool Fixed::operator>( const Fixed& fixed ) {
+bool Fixed::operator>( const Fixed& fixed ) const {
     return this->mFixedPointValue > fixed.mFixedPointValue;
 }
 
-bool Fixed::operator<( const Fixed& fixed ) {
+bool Fixed::operator<( const Fixed& fixed ) const {
     return this->mFixedPointValue < fixed.mFixedPointValue;
 }
 
-bool Fixed::operator>=( const Fixed& fixed ) {
+bool Fixed::operator>=( const Fixed& fixed ) const {
     return this->mFixedPointValue >= fixed.mFixedPointValue;
 }
 
-bool Fixed::operator<=( const Fixed& fixed ) {
+bool Fixed::operator<=( const Fixed& fixed ) const {
     return this->mFixedPointValue <= fixed.mFixedPointValue;
 }
 
-bool Fixed::operator==( const Fixed& fixed ) {
+bool Fixed::operator==( const Fixed& fixed ) const {
     return this->mFixedPointValue == fixed.mFixedPointValue;
 }
 
-bool Fixed::operator!=( const Fixed& fixed ) {
+bool Fixed::operator!=( const Fixed& fixed ) const {
     return this->mFixedPointValue != fixed.mFixedPointValue;
 }
 
