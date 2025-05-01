@@ -1,4 +1,4 @@
-NAME = OCF
+NAME = ex00
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++17
 
