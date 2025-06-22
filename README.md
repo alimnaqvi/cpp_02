@@ -5,7 +5,7 @@
 
 This project is part of the C++ modules at 42 School. It focuses on fundamental Object-Oriented Programming concepts in C++, specifically **Ad-hoc Polymorphism** (Function and Operator Overloading) and the **Orthodox Canonical Class Form (OCF)**. Through a series of exercises, we build a fixed-point number class and apply it to a simple geometrical problem.
 
-## Learning Objectives
+## Core Concepts Covered
 
 *   Understand and implement the **Orthodox Canonical Form (OCF)** for C++ classes, ensuring proper resource management (though not strictly needed for this simple class, it's good practice).
 *   Grasp the concept of **Ad-hoc Polymorphism** and apply it through function overloading and, more extensively, **operator overloading**.
@@ -18,6 +18,17 @@ This project is part of the C++ modules at 42 School. It focuses on fundamental 
 *   Understand the difference in implementation and behavior between **pre-increment/decrement** and **post-increment/decrement** operators.
 *   Apply the developed fixed-point class to a practical problem: **Binary Space Partitioning (BSP)** to determine if a point lies within a triangle.
 *   Reinforce the importance of **`const` correctness** in class design and function signatures.
+
+## Learning Resources
+
+* [Introduction to the copy constructor](https://www.learncpp.com/cpp-tutorial/introduction-to-the-copy-constructor/)
+* [Object relationships](https://www.learncpp.com/cpp-tutorial/object-relationships/)
+* [Simple Fixed-Point Math](https://spin.atomicobject.com/simple-fixed-point-math/)
+* [Overloading the I/O operators](https://www.learncpp.com/cpp-tutorial/overloading-the-io-operators/)
+* [Overloading operators using member functions](https://www.learncpp.com/cpp-tutorial/overloading-operators-using-member-functions/)
+* [Overloading the comparison operators](https://www.learncpp.com/cpp-tutorial/overloading-the-comparison-operators/)
+* [Overloading the increment and decrement operators](https://www.learncpp.com/cpp-tutorial/overloading-the-increment-and-decrement-operators/)
+* [Overloading the assignment operator](https://www.learncpp.com/cpp-tutorial/overloading-the-assignment-operator/)
 
 ## Project Structure
 
