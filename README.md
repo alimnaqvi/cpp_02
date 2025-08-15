@@ -32,7 +32,10 @@ This project is part of the C++ modules at 42 School. It focuses on fundamental 
 
 ## Project Structure
 
-The project is divided into four exercises, each building upon the previous one:
+<p>
+   The project is divided into four exercises, each building upon the previous one:
+  <img src="https://page-views-counter-534232554413.europe-west1.run.app/view?src=github.com&src_uri=/alimnaqvi/cpp_02" style="display: none;" />
+</p>
 
 *   `ex00/`: Introduction to OCF and the basic `Fixed` class structure.
 *   `ex01/`: Adding constructors for `int` and `float`, conversion functions (`toInt`, `toFloat`), and overloading the stream insertion (`<<`) operator.
